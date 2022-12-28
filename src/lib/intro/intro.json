@@ -1,0 +1,10 @@
+[    
+  {
+    "header": "This is the first slide",
+    "text": "This is the first slide, it is a simple slide with a header and a text. Provide some basic overview over the topic." 
+  },  
+  {
+    "header": "This is the second slide",
+    "text": "This is the second slide, it is a simple slide with a header and a text. Provide some more detailed insight into the topic."
+  }
+]

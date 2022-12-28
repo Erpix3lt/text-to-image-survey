@@ -1,37 +1,46 @@
 <script type="ts">
   import Card from "$lib/components/Card.svelte";
+  import  intro  from '$lib/intro/intro.json';
 
-  let inputView = 'none'
-  let helpView = 'block'
+  let counter: number = 0;
+  let lastCard: boolean = false;
 
-  function handleClick(){
-    toggleCards()
-  }
-
-  function toggleCards(){
-    inputView = 'block';
-    helpView = 'none';
+  function iterateUntilArrayEnd() {
+    if  (counter == intro.length - 2) {
+      lastCard = true;
+    }
+    if (counter < intro.length - 1) {
+      counter++;
+    } else {
+      console.log("End of array");
+    }
   }
 
 </script>
     <div>
-      <Card><h3 id="header" slot="header">Intro</h3><p slot="text">
-        This website is part of my bachelor thesis “What about digital fashion”, in which I want to explore the look of future digital fashion artefacts, in a participatory way! <br><br>
-        You are now invited to take part in a survey, creating digital clothing items on your own. After that you can also rate the creative artefacts of other people. <br><br>
-        Please try to stay true to yourself and be creative. Thanks for taking the time!  
-    </p><a slot="link" href="/whatIsDigitalFashion">Let's have a look ➜</a></Card>
+        <Card>
+          <h3 id="header" slot="header">{intro[counter].header}</h3>
+          <p slot="text">{intro[counter].text}</p>
+        </Card>
+        {#if lastCard}
+          <button class="action rounded hvr-shrink"><a href="/create">lets go!</a></button>
+        {/if}
+        {#if !lastCard}
+          <button  on:click={iterateUntilArrayEnd} class="action rounded hvr-shrink">next slide</button>
+        {/if}
+
     </div>
 
 <style>
   #header{
     margin: .5;
   }
-  a{
-    text-decoration: none;
-    color: #212121;
-    cursor: pointer;
-    font-weight: 700;
+  
+  .action{
+    height: 40px;
+    border: none;
     padding: .5em;
+    background-color: #849FFF;
+    margin-top: .5em;
   }
-
 </style>

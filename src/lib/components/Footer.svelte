@@ -1,7 +1,7 @@
 
 <div class="flex-column">
     <a id="telegram" href="https://t.me/+ZW5omIiupGcyNDIy">Join the telegram chat, to see new entries.</a>
-    <p>@Maximilian Schmalenbach</p>
+    <p>@{import.meta.env.VITE_AUTHOR}</p>
 </div>
 
 

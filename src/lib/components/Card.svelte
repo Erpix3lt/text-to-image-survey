@@ -8,22 +8,9 @@
     <div class="help-text">
         <slot  name="text"></slot>
     </div>
-    <button class="align-self-right action rounded hvr-shrink"><slot name="link"></slot></button> 
 </div>
 
 <style>
-    .action{
-        height: 40px;
-        border: none;
-        padding: .5em;
-        background-color: #849FFF;
-        margin-top: .5em;
-    }
-
-    .align-self-right{
-        align-self: end;
-    }
-    
     .header{
         display: flex;
         flex-direction: row;

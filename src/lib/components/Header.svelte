@@ -1,23 +1,11 @@
 <script>
-    let fullLogoDisplay = "none";
-    let navDisplay = 'block'
 
-    function showFullLogo(){
-        fullLogoDisplay = "block"
-        navDisplay = 'none'
 
-    }
-
-    function hideFullLogo(){
-        fullLogoDisplay = "none";
-        navDisplay = 'block'
-    }
 </script>
 
 <div class="flex-column">
-    <a href="/"><h2 on:mouseenter={showFullLogo} on:mouseleave={hideFullLogo}>WADF?</h2></a>
-    <div style="display: {fullLogoDisplay};" class="full-logo rounded"><p>what about digital fashion?</p></div>
-    <nav style="display: {navDisplay};">
+    <a href="/"><h2>{import.meta.env.VITE_TITLE}</h2></a>
+    <nav >
         <a href="/">intro</a>
         <a href="/submissions">gallery</a>
         <a href="/create">create</a>
