@@ -1,6 +1,8 @@
 
 <div class="flex-column">
-    <a id="telegram" href="https://t.me/+ZW5omIiupGcyNDIy">Join the telegram chat, to see new entries.</a>
+    {#if import.meta.env.VITE_TELEGRAM_LINK != undefined}
+        <a id="telegram" href="{import.meta.env.VITE_TELEGRAM_LINK}">Join the telegram chat, to see new entries.</a>
+    {/if}
     <p>@{import.meta.env.VITE_AUTHOR}</p>
 </div>
 

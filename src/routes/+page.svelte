@@ -23,7 +23,7 @@
           <p slot="text">{intro[counter].text}</p>
         </Card>
         {#if lastCard}
-          <button class="action rounded hvr-shrink"><a href="/create">lets go!</a></button>
+          <button class="action rounded hvr-shrink"><a href="/create/examples">next slide</a></button>
         {/if}
         {#if !lastCard}
           <button  on:click={iterateUntilArrayEnd} class="action rounded hvr-shrink">next slide</button>
@@ -32,6 +32,10 @@
     </div>
 
 <style>
+  a{
+    color: black;
+  }
+
   #header{
     margin: .5;
   }
