@@ -1,6 +1,6 @@
 # text-to-image-survey
-**Create your own remote workshop, using OpenAi's Dall E as part of a generative toolset.**
-Running example: https://whataboutdigitalfashion.vercel.app
+**Create your own remote workshop, using OpenAi's Dall E as part of a generative toolset.** <br>
+Running example: https://whataboutdigitalfashion.vercel.app 
 
 ## Techstack
 This template is using **svelte kit** for the web infrastructure. Intro cards, providing insight into the topic your survey is about, are based on **json** input. The site relies on a **supabase** database, here survey results, as well as the images created will be saved. Every new entry will be automatically posted by a preconfigured bot in a **telegram** group. The site also relies on **open ai**'s api, in order to use **Dall e**.
