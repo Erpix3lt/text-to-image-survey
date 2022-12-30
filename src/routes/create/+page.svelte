@@ -122,7 +122,7 @@
     <div class="input-card rounded">
         <div class="text-wrapper rounded flex-row" style="display: {firstView};">
             <p id="emoji">🐣</p>
-            <p>Please create your own Garment now. 
+            <p>Please create your own artifact now. 
                 A very precise description is helpfull.
             </p>
         </div>
@@ -136,7 +136,7 @@
         
         <div class="text-wrapper rounded flex-row" style="display: {secondView};">
           <p id="emoji">👤</p>
-          <p>Please enter your nickname now. Your description and name is visible in the telegram chat afterwards.
+          <p>Please enter your nickname now. Your description and name might be visible in the telegram chat afterwards.
           </p>
         </div>
 
